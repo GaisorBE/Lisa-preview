@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>Projecten</title></head>
+<body>
+  <h1>Projectenlijst</h1>
+  <table border="1">
+    <tr><th>Project</th><th>Status</th></tr>
+    {% for p in projecten %}
+    <tr><td>{{ p.project }}</td><td>{{ p.status }}</td></tr>
+    {% endfor %}
+  </table>
+  <a href="/">Terug</a>
+</body>
+</html>

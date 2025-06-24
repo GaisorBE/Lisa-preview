@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>Materiaal</title></head>
+<body>
+  <h1>Materiaaloverzicht</h1>
+  <table border="1">
+    <tr><th>Item</th><th>Aantal</th><th>Eenheid</th></tr>
+    {% for m in materiaal %}
+    <tr><td>{{ m.item }}</td><td>{{ m.aantal }}</td><td>{{ m.eenheid }}</td></tr>
+    {% endfor %}
+  </table>
+  <a href="/">Terug</a>
+</body>
+</html>

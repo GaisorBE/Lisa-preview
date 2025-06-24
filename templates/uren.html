@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>Uren</title></head>
+<body>
+  <h1>Urenregistratie</h1>
+  <table border="1">
+    <tr><th>Naam</th><th>Project</th><th>Uren</th></tr>
+    {% for u in uren %}
+    <tr><td>{{ u.naam }}</td><td>{{ u.project }}</td><td>{{ u.uren }}</td></tr>
+    {% endfor %}
+  </table>
+  <a href="/">Terug</a>
+</body>
+</html>
